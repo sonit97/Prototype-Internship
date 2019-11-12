@@ -1,0 +1,149 @@
+div
+.tabcontents
+{ width: 100%;
+    border: 2px solid #A4B0B8; padding: 20px;
+    background-color:#F2F7FF;
+    border-radius: 0 2px 2px 2px;
+
+}
+ul.tabs
+{
+    padding: 7px 0;
+    font-size: 0;
+    margin:0;
+    list-style-type: none;
+    text-align: left;
+}
+        
+ul.tabs li
+{
+    display: inline;
+    margin: 0;
+    margin-right:3px;
+}
+        
+ul.tabs li a
+{
+    font: normal 12px Verdana;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    padding: 7px 16px;
+    border: 1px solid #CCC;
+    border-bottom-color:#B7B7B7;
+    color: #000;
+    background: #F0F0F0;
+    border-radius: 6px 6px 0px 0px;
+    -moz-border-radius: 6px 6px 0px 0px;
+    outline:none;
+}
+
+ul.tabs li a:hover
+{
+    border: 1px solid #B7B7B7;
+    background:#E0E0E0;
+}
+        
+ul.tabs li.selected a
+{
+    position: relative;
+    top: 0px;
+    font-weight:bold;
+    background: white;
+    border: 1px solid #B7B7B7;
+    border-bottom-color: white;
+}
+#main{
+    margin: 5px;
+    margin-left: 10px;
+}
+.tabcontent1{
+     border: 2px solid #A4B0B8;
+    border-radius: 4px;
+    margin: -16px;
+    padding: 15px 5px;
+        background: #EFEFEF;
+}
+.button {
+    border: 0.5px solid ;
+    border-radius: 4px;
+    float-right:2px;
+}
+.left {
+    float: left;
+    width: 84%;
+    padding-bottom: 12px;
+}
+
+.right {
+    float: right;
+    width: 16%;
+}
+.right button{
+    
+    border: 0.5px solid ;
+    border-radius: 4px;
+
+}
+.right input{
+    border-radius: 5px;
+    background: linear-gradient(#F6F7F8,#D1D5D9,#F6F7F8);
+}
+.phantrang{
+    border: 0.5px solid ;
+    height: 30px;
+    width: 226px;
+    margin-left: 22px;
+
+}
+input{
+        border: 1px solid #94A1AA;
+         border-radius: 2px;
+}
+
+
+table {
+    border-collapse: collapse;    
+    border: 2px solid #B3B4B4;
+    width: 100%;    
+}
+th, td {    
+    border-collapse: collapse; 
+    text-align: left;
+    border-right: 1px solid  #B3B4B4;
+    
+
+    padding: 8px;
+   
+}
+
+
+tr:nth-child(even){background-color: #E1E7EC;
+}
+
+th {
+     background: linear-gradient(#F4F5F6,#CFD2D6,#E1E2E4);
+     font-weight: bold;
+     
+   
+}
+
+
+.action-submit{
+    display: block;
+    float: right;
+    margin-top: -27px;
+}
+
+.action-submit input{
+    border-radius: 5px;
+    line-height: 20px;
+    width: 100px;
+    margin-left: 10px;
+    background: linear-gradient(#F6F7F8,#D1D5D9,#F6F7F8);
+} 
+
+.icon-pager{
+    width: 12px;
+    height: 14px;
+}

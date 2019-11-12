@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<title> Example </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<script type="text/javascript" src="vendor/bootstrap.js"></script>
+<script type="text/javascript" src="1.js"></script>
+<link rel="stylesheet" href="1.css">
+<link rel="stylesheet" href="vendor/bootstrap.css">
+<link rel="stylesheet" href="vendor/font-awesome.css">
+
+</head>
+<body >	
+  <div id="main">
+   <div>
+    <p style="color:#95B9DD ">Organisation <span style="color: #070707">></span> </p>
+    <h3 style="color:#509200;font-weight: bold; ">Business Unit/Directorate Details</h3>	
+  </div>
+  <div>
+    <ul id="tab_ul" class="tabs">
+      <li class="selected"><a rel="tab_div1" href="#" onclick="javascript:ShowMyDiv(this);">Detail</a></li>
+      <li class=""><a rel="tab_div2" href="#" onclick="javascript:ShowMyDiv(this);">Department</a></li>
+      <!--   <li class=""><a rel="tab_div3" href="#" onclick="javascript:ShowMyDiv(this);">Tab 3</a></li>
+      <li class=""><a rel="tab_div4" href="#" onclick="javascript:ShowMyDiv(this);">Tab 4</a></li> -->
+      
+    </ul>
+    <div class="action-submit">
+      <input type="submit" name="aaa" value="In-active">
+      <input type="submit" name="aaa" value="Save">
+      <input type="submit" name="aaa" value="Back">
+    </div> 
+    <div class="tabcontents">
+     <div class="tabcontent" id="tab_div1" style="display: block;">
+      <div class="tabcontent1">
+        <b></b>
+        <p>The content could contain anything text page or submit form or any other HTML objects.</p>
+      </div>
+    </div>
+    <div class="tabcontent" id="tab_div2" style="display: none;">
+     <div class="tabcontent1">
+       <div>
+        <div  class="left">
+         <b><a href="">All</a> | <a href="">0 - 9</a> | <a href=""> A B C D E</a> |  <a href=""> F G H I J</a> |  <a href=""> K L M N </a> |  <a href=""> O P Q R </a> |  <a href=""> S T U V </a> |  <a href=""> W X Y Z </a>  </b>
+
+       </div>
+       <div class="right">
+        <input type="submit" name="aaa" value="Create">
+         <input  type="checkbox" name="active" value="Include In-active">Include In-active<br>
+       </div>
+       <div id=table>
+         <table>
+          <tr>
+            <th>Department</th>
+            <th>Address Line 1</th>
+            <th>Postocode</th>
+            <th>Contact</th>
+            <th>Is Active ?</th>
+            <th></th>
+          </tr>
+
+          <tr>
+            <td >department abcd</td>
+            <td >Address Line 1</td>
+            <td >$SL 101</td>
+            <td >Truong Gia Binh</td>
+            <td >$Yes</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td >new department name</td>
+            <td >Co flag</td>
+            <td >$CG 2470</td>
+            <td >Ha TH</td>
+            <td >Yes</td>
+            <td></td>
+          </tr>
+          
+        </table>
+
+        <div class="container">
+          <div class="row">
+          <div class="col-sm-9"></div>
+          <div class="col-sm-3 " style="padding-left: 54px; padding-top: 10px; ">
+          
+          <div class="phantrang" style="display: inline-block;  border: 0.5px solid #96A3AC ;
+    border-radius: 4px;">
+          <span style="padding-left: 4px;" class=" first"><img class="icon-pager" src="images/Capture.png"></span>
+          <span style="padding-left: 10px; " class=" prev"><img class="icon-pager" src="images/Capture3.png"></span> |
+           Page: <input style="height: 20px; width: 40px;" type="text" name="Page" >
+           <span>of</span> <span>1</span> |
+        <span class=" next"><img class="icon-pager" src="images/Capture1.png"></span>
+          <span style="padding-left: 10px; " class="last"><img class="icon-pager" src="images/Capture4.png"></span> 
+          </div>
+
+          </div>  
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+
+
+  </div>
+
+</div>
+<!--  <div class="tabcontent" id="tab_div3" style="display: none;">
+ 	<div class="tabcontent1">
+  <b>About tabs</b>
+  <p>by Selecting any tab its classname will set to be "selected" which has a different style from the other tabs<br>
+  that can be done by using a simple javascript code<br>
+  <b><I>TabObj.className="selected";</I></b></p>
+ </div>
+</div> -->
+<!--  <div class="tabcontent" id="tab_div4" style="display: none;">            
+  <div class="tabcontent1">
+  <p><B>Read more about</B><br>
+  </p>
+  <div>
+ </div>
+</div>
+</div> -->	
+</div>
+<script>
+  function ShowMyDiv(Obj){
+    var elements = document.getElementsByTagName('div');
+    for (var i = 0; i < elements.length; i++) 
+      if(elements[i].className=='tabcontent')
+       elements[i].style.display= 'none';
+
+     document.getElementById(Obj.rel).style.display= 'block';
+ //------------------------------------
+
+ var ul_el = document.getElementById('tab_ul');
+ var li_el = ul_el.getElementsByTagName('li');
+ for (var i = 0; i < li_el.length; i++) 
+  li_el[i].className="";
+
+Obj.parentNode.className="selected";
+}
+</script>
+</body>
+</html>

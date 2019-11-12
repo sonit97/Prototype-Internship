@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<title> Detail & Edit </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<script type="text/javascript" src="vendor/bootstrap.js"></script>
+<script type="text/javascript" src="1.js"></script>
+<link rel="stylesheet" href="1.css">
+<link rel="stylesheet" href="vendor/bootstrap.css">
+<link rel="stylesheet" href="vendor/font-awesome.css">
+
+</head>
+<body >	
+  <div id="main">
+   <div>
+    <p style="color:#95B9DD ;">Organisation <span style="color: #070707">> <span style="color:#95B9DD ;" >Directorate</span></span></p>
+    <h3 style="color:#509200;font-weight: bold; ">Business Unit/Directorate Details</h3> 	
+  </div>
+  <div>
+    <ul id="tab_ul" class="tabs">
+      <li class="selected"><a rel="tab_div1" href="#" onclick="javascript:ShowMyDiv(this);">Detail</a></li>           
+    </ul>
+
+    <form>
+      <div class="action-submit">      
+        <input type="submit" name="aaa" value="Save">
+        <input type="submit" name="aaa" value="Back">
+      </div> 
+      <div class="tabcontents">
+       <div class="tabcontent" id="tab_div1" style="display: block;">
+        <div class="tabcontent1">
+          <div class="container">
+           <div class="row">   
+             <div class="col-sm-6 row">
+
+               <div class="col-sm-4 pb-1">
+                <span>Department Name </span><span style="color: red;">*</span> 
+              </div>
+              <div class="col-sm-8 pb-1">
+               <input style="width: 329px;" id="departname" type="text" name="DepartmentName" value="">
+               <span id="aircodeSpan"></span>
+             </div>
+             <div class="col-sm-4 pb-1" style="padding-top: 9px;>
+
+               <label style="display: inline;">Department Short <br>Descipton </label><span style="color: red;">*</span> 
+             </div>
+             <div class="col-sm-8 pb-1">
+               <textarea id="departshort" class=" form-control input-change " rows="2" cols="50"></textarea>
+               <span id="departshortspan"></span>
+             </div>
+             <div class="col-sm-4 pb-1">
+              <span>Lead Contact </span> 
+            </div>
+            <div class="col-sm-8 pb-1">
+             <input style="width: 250px;" type="text" name="DepartmentName" value="" readonly="true"><span><a style="padding-left: 24px;" href="#">Lookup</a></span>
+           </div>
+           <div class="col-sm-4 pb-1">
+            <span>Copy Address Form </span> 
+          </div>
+          <div class="col-sm-8 pb-1">
+           <input type="radio" name="vehicle" value="Bike"> Organisation
+           <input style="margin-left: 154px;" type="radio" name="vehicle" value="Car" checked> Parent
+         </div>
+         <div class="col-sm-4 pb-1">
+          <span>Address Line 1 </span> 
+        </div>
+        <div class="col-sm-8 pb-1">
+         <input style="width: 329px;" type="text" name="DepartmentName" value="">
+       </div>
+       <div class="col-sm-4 pb-1">
+        <span>Address Line 2 </span> 
+      </div>
+      <div class="col-sm-8 pb-1">
+       <input style="width: 329px;" type="text" name="DepartmentName" value="">
+     </div>
+     <div class="col-sm-4 pb-1">
+      <span>Address Line 3 </span> 
+    </div>
+    <div class="col-sm-8 pb-1">
+     <input style="width: 329px;" type="text" name="DepartmentName" value="">
+   </div>
+   <div class="col-sm-4 pb-1">
+    <span>Postcode</span> 
+  </div>
+  <div class="col-sm-8 pb-1">
+   <input style="width: 200px;" type="text" name="DepartmentName" value="" readonly="true"><span><a style="padding-left: 24px;" href="#">Lookup</a></span>
+ </div>
+ <div class="col-sm-4 pb-1">
+  <span>Town/Vilage/City </span> 
+</div>
+<div class="col-sm-8 pb-1">
+ <input style="width: 329px;" type="text" name="DepartmentName" value="">
+</div>
+<div class="col-sm-4 pb-1">
+  <span>Country</span> 
+</div>
+<div class="col-sm-8 pb-1">
+ <input style="width: 329px;" type="text" name="DepartmentName" value="">
+</div>
+<div class="col-sm-4 pb-1">
+  <span>Country</span> 
+</div>
+<div class="col-sm-8 pb-1">
+ <select style="width: 285px;">
+  <option value="volvo"></option>
+  <option value="saab">Saab</option>
+  <option value="opel">Opel</option>
+  <option value="audi">Audi</option>
+</select>
+</div>
+
+</div>
+
+<div class="col-sm-6 row">
+
+ <div class="col-sm-4 pb-1">
+  <span>Type of Business </span> 
+</div>
+<div class="col-sm-8 pb-1">
+  <input style="width: 250px;" type="text" name="DepartmentName" value="" readonly="true"><span><a style="padding-left: 24px;" href="#">Lookup</a></span>
+</div>
+<div class="col-sm-4 pb-3">
+  <span>SIC Code </span> 
+</div>
+<div class="col-sm-8 pb-3">
+ <input style="width: 100px;" type="text" name="DepartmentName" value="">
+</div>
+<div class="col-sm-4 pb-1" style="padding-top: 9px;>
+ <label display: inline;">Department Full <br>Descipton </label></span> 
+</div>
+<div class="col-sm-8 pb-1">
+ <textarea class=" form-control input-change " rows="2" cols="50"></textarea>
+</div>
+
+<div class="col-sm-4 pb-1">
+  <span>Phone Number </span> 
+</div>
+<div class="col-sm-8 pb-1">
+ <input style="width: 329px;" type="text" name="DepartmentName" value="">
+</div>
+<div class="col-sm-4 pb-1">
+  <span>Fax </span> 
+</div>
+<div class="col-sm-8 pb-1">
+ <input style="width: 329px;" type="text" name="DepartmentName" value="">
+</div>
+<div class="col-sm-4 pb-1">
+  <span>Email </span> 
+</div>
+<div class="col-sm-8 pb-1">
+ <input style="width: 329px;" type="text" name="DepartmentName" value="">
+</div>
+
+<div class="col-sm-4 pb-1">
+  <span>Web Address </span> 
+</div>
+<div  class="col-sm-8 pb-1">
+ <input style="width: 329px;" type="text" name="DepartmentName" value="">
+</div>
+<div style="visibility: hidden"> class="col-sm-4 pb-1">
+  <span>Country</span> 
+</div>
+<div style="visibility: hidden"> class="col-sm-8 pb-1">
+</div>
+<div style="visibility: hidden"> class="col-sm-4 pb-1">
+  <span>Country</span> 
+</div>
+<div style="visibility: hidden"> class="col-sm-8 pb-1">
+ <select style="width: 285px;">
+
+ </select>
+</div>
+<div  style="visibility: hidden"class="col-sm-4 pb-1">
+  <span>Copy Address Form </span> 
+</div>
+<div style="visibility: hidden" class="col-sm-8 pb-1">
+
+</div>
+
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</form>
+</div>
+</div>
+
+</div>
+
+</div>
+<script>
+
+  $("#departname").blur(function(e) {
+    if($("#departname").val().trim().length === 0) {
+      $("#aircodeSpan").html('Please input Department Name');
+      $("#aircodeSpan").css('color' , 'red');
+    } else {
+      $("#aircodeSpan").html('');
+    }
+  }); 
+  $("#departshort").blur(function(e) {
+    if($("#departshort").val().trim().length === 0) {
+      $("#departshortspan").html('Please input Department Short Descipton');
+      $("#departshortspan").css('color' , 'red');
+    } else {
+      $("#departshortspan").html('');
+    }
+  }); 
+
+  function ShowMyDiv(Obj){
+    var elements = document.getElementsByTagName('div');
+    for (var i = 0; i < elements.length; i++) 
+      if(elements[i].className=='tabcontent')
+       elements[i].style.display= 'none';
+
+     document.getElementById(Obj.rel).style.display= 'block';
+ //------------------------------------
+
+ var ul_el = document.getElementById('tab_ul');
+ var li_el = ul_el.getElementsByTagName('li');
+ for (var i = 0; i < li_el.length; i++) 
+  li_el[i].className="";
+
+Obj.parentNode.className="selected";
+}
+</script>
+</body>
+</html>
